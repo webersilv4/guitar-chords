@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
+import { getTime } from './functions/index.f';
 
 function App() {
             
     let chords: any;
-    let time = 0;
+    const [time, setTime] = useState<number>(0);
 
-    const getTime = () => {
-
-        time = document.getElementById('time').value;
-
-        if (time >= 1) localStorage.setItem('time', time + '000');
-        else localStorage.setItem('time', 4000);
-
-        location.reload();
-    };
 
     const start = () => {
 
@@ -36,8 +28,11 @@ function App() {
         <>
             <div className="container">
 
-                <form id="formTime" onSubmit={getTime}>
-                    <input type="number" placeholder="Ex: 5" id="time" className="form-input" />
+                <form id="formTime" onSubmit={() => getTime(time) }>
+                    <input type="number" 
+                        placeholder="Ex: 5" 
+                        className="form-input" 
+                        onChange={(e)=>setTime(e.target.valueAsNumber)} />
                     <input type="submit" value="Definir tempo" className="btn-submit" />
                 </form>
 
