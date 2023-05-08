@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --fonts-heading: 'M PLUS Rounded 1c';
+    --fonts-body: 'Poppins', sans-serif;
+
+    --first-color: #000;
+    --second-color: #ff385c;
+    --danger-color: #ff385c;
+    --slate-blue: #6a5acd;
+    /* --color-dark-1: hsl(250, 28%, 12%); */
+    /* --color-dark-2: #202023; */
+    /* --color-white-alpha: rgb(255 255 255 / 8%); */
+    /* --color-colors-gray-800: #1a202c; */
+
+    --border-radius-lg: 4px;
+}
+
+/* Texts */
+.text-default {
+    color: var(--first-color);
+}
+
+.text_warning {
+    color: var(--second-color);
+}
+
+.font-12 {
+    font-size: 13px;
+}
+
+/* Forms */
+
+/* Borders */
+.border_bottom {
+    border-bottom: 3px solid var(--color-white-alpha);
+}
+
+.border_avatar {
+    border: 3px solid var(--second-color) !important;
+}
+
+.error {
+    background-color: red;
+}
+
+.success {
+    background-color: green;
+}
+
+/* Buttons */
+.btn-start {
+    background-color: transparent;
+    color: aquamarine;
+    border: 3px solid aquamarine;
+    border-radius: var(--border-radius-lg);
+    
+}
+
+.btn-stop {
+    background-color: transparent;
+    color: #ff385c;
+    border: 3px solid #ff385c;
+    border-radius: var(--border-radius-lg);
+}
+
+.botton {
+    /* width: 100%; */
+    border: none;
+    border-radius: var(--border-radius-lg);
+    padding: 10px;
+    background-color: var(--first-color);
+    color: var(--white);
+    outline: none;
+    font-weight: bolder;
+}
+
+.botton:hover {
+    /* width: 100%; */
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Cards */
+.card {
+    border-radius: var(--border-radius-lg);
+    background-color: var(--color-white-alpha) !important;
+}
+
+.icon {
+    font-size: 55px;
+    color: var(--second-color);
+}
+
+.icon-btn {
+    font-size: 35px;
+}
+
+.icon_del {
+    color: var(--danger-color);
+}
+
+.social_icon {
+    font-size: 25px;
+    color: var(--first-color);
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    color: var(--first-color);
+    font-size: 25px;
+}
+
+/* avatar */
+.avatar {
+    min-height: 60px;
+    width: 60px;
+}
+
+.showcase .showcase-text {
+    padding: 7rem;
+}
+
+/* TEMPLATE HOMEPAGE */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
