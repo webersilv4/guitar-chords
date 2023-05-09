@@ -18,10 +18,10 @@
 
 /* Texts */
 .text-default {
-    color: var(--first-color);
+    color: var(--slate-blue);
 }
 
-.text_warning {
+.text-warning {
     color: var(--second-color);
 }
 
@@ -29,14 +29,18 @@
     font-size: 13px;
 }
 
+.font-55 {
+    font-size: 55px;
+}
+
 /* Forms */
 
 /* Borders */
-.border_bottom {
+.border-bottom {
     border-bottom: 3px solid var(--color-white-alpha);
 }
 
-.border_avatar {
+.border-avatar {
     border: 3px solid var(--second-color) !important;
 }
 
@@ -52,16 +56,17 @@
 .btn-start {
     background-color: transparent;
     color: aquamarine;
-    border: 3px solid aquamarine;
+    border: 0px;
     border-radius: var(--border-radius-lg);
-    
+    margin: 10px;
 }
 
 .btn-stop {
     background-color: transparent;
     color: #ff385c;
-    border: 3px solid #ff385c;
+    border: 0px;
     border-radius: var(--border-radius-lg);
+    margin: 10px;
 }
 
 .botton {
@@ -88,19 +93,18 @@
 }
 
 .icon {
-    font-size: 55px;
-    color: var(--second-color);
+    color: var(--slate-blue);
 }
 
 .icon-btn {
     font-size: 35px;
 }
 
-.icon_del {
+.icon-del {
     color: var(--danger-color);
 }
 
-.social_icon {
+.social-icon {
     font-size: 25px;
     color: var(--first-color);
 }

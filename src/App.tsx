@@ -15,9 +15,9 @@ function App() {
 
     return (
         <>
-            <div className="container">
+            <div className="container text-center">
 
-                <h1 className="title">ACORDES ALEATÓRIOS</h1>
+                <h1 className="text-white m-5">ACORDES ALEATÓRIOS</h1>
 
                 {/* Acordes selecionados */}
                 <Chords />
@@ -26,11 +26,23 @@ function App() {
                 <Form />
 
                 {/* Acordes em troca */}
-                <br /> <br /> <b id="chords"><MdMusicOff className="icon" /></b>   
+                <br /> <br /> 
+                <b id="chords" className='text-default font-55'>
+                    <MdMusicOff className="icon font-55" />
+                </b>   
 
                 {/* Botões de Iniciar e parar */}
-                <ButtonPlay />
-                <ButtonStop />
+
+                <div className='d-flex justify-content-center'>
+                    <div>
+                        <ButtonPlay />
+                        <p className='text-green-dft'>Play</p>
+                    </div>
+                    <div>
+                        <ButtonStop />
+                        <p className='text-danger'>Pausa</p>
+                    </div>
+                </div>
 
             </div>
 

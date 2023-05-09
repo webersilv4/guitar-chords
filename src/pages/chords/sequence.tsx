@@ -15,9 +15,9 @@ const ChordsInSequence = () => {
             
 
             {/* CONTAINER */}
-            <div className="container">
+            <div className="container text-center">
                 
-                <h1 className="title">ACORDES ORDENADOS</h1>
+                <h1 className="text-white m-5">ACORDES ORDENADOS</h1>
 
                 {/* Acordes selecionados */}
                 <Chords />
@@ -26,10 +26,16 @@ const ChordsInSequence = () => {
                 <Form />
 
                 {/* Acordes em troca */}
-                <br /> <br /> <b id="chords"><MdMusicOff className="icon" /></b>
+                <br /> <br /> 
+                <b id="chords"  className='text-default font-55'>
+                    <MdMusicOff className="icon font-55" />
+                </b>
 
                 {/* Botão de Iniciar */}
-                <ButtonPlayInSequence />
+                <div className=''>
+                    <ButtonPlayInSequence />
+                    <p className='text-green-dft'>Play</p>
+                </div>
 
             </div>
 

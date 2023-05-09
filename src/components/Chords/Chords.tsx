@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { addNewChord, removeOneChord } from '../../functions/index.f';
 
 
@@ -52,7 +53,7 @@ export const Chords = () => {
             <div>
 
                 {chordsInSequence.map((item: string, key: number)=>(
-                    <button id="chord-6" className="btn-add" key={key} 
+                    <button id="chord-6" className="btn-remove" key={key} 
                         onClick={(e) => {removeOneChord(e);}} value={key}>
                         {item}
                     </button>

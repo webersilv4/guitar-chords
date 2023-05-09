@@ -10,14 +10,16 @@ import { MdQueueMusic, MdMusicNote } from 'react-icons/md';
 export const Nav = () => {
     
     return (
-        <nav className="navbar">
+        <nav className="mt-5 d-flex justify-content-center navbar-fixed">
 
-            <a href="/" className="active">
-                <MdMusicNote />
+            <a href="/" className="m-2 text-warning">
+                Aleatórios
+                <MdMusicNote className='font-30'/>
             </a>
 
-            <a href="/sequence">
-                <MdQueueMusic />
+            <a href="/sequence" className='m-2 text-warning'>
+                Ordenados
+                <MdQueueMusic className='font-30'/>
             </a>
         </nav>
     );
