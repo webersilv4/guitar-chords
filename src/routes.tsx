@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // import Home from './Pages/Home/Home';
 import App from './App';
-import NotFound from './pages/errors/notfound';
 import ChordsInSequence from './pages/chords/sequence';
+import NotFound from './pages/errors/notfound';
 
 
 const Router = () => {
